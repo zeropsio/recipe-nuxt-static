@@ -1,0 +1,12 @@
+zerops:
+  - setup: app
+    build:
+      base: nodejs@20
+      buildCommands:
+        - pnpm i
+        - pnpm nuxi generate
+      deployFiles:
+        - .output/public/~
+    run:
+      base: static
+      
