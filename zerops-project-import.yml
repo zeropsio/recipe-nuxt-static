@@ -1,0 +1,10 @@
+project:
+  name: recipe-nuxt
+  tags:
+    - zerops-recipe
+
+services:
+  - hostname: app
+    type: static
+    buildFromGit: https://github.com/zeropsio/recipe-nuxt-static
+    enableSubdomainAccess: true

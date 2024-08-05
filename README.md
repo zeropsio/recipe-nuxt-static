@@ -1,28 +1,37 @@
-# Zerops x Nuxt - Nodejs
+# Zerops x Nuxt - Node.js
 
-![Header Image](https://storage-prg1.zerops.io/4gn35-objectstorage0/nuxtjs-zerops)
+Nuxt is an open source Vue framework for building web applications intuitive and powerful. [Zerops](https://zerops.io) makes deploying and running Nuxt apps, both server side rendered and static, a breeze. This recipe showcases the Node.js version, see [zeropsio/recipe-nuxt-static](https://github.com/zeropsio/recipe-nuxt-static) for the Static version.
 
-A Node.js Nuxt app deployment example for [Zerops](https://zerops.io) - a developer first cloud platform.
+![nuxt](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-nuxt.svg)
 
-## Deploy to Zerops
+<br/>
 
-1. [Create an account](https://app.zerops.io/registration) and locate the "Import project" button in the top left menu.
+## Deploy on Zerops
 
-2. Copy & paste the YAML setup below and confirm
+You can either click the deploy button to deploy directly on Zerops, or manually copy the [import yaml](https://github.com/zeropsio/recipe-nuxt-nodejs/blob/main/zerops-project-import.yml) to the import dialog in the Zerops app.
 
-```yaml
-project:
-  name: zerops-nuxt
+<br/>
 
-services:
-  - hostname: nuxtnodejs
-    type: nodejs@20
-    buildFromGit: https://github.com/fxck/recipe-nuxt-nodejs
-    ports:
-      - port: 3000
-        httpSupport: true
-    enableSubdomainAccess: true
-    minContainers: 1
-```
+[![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/nuxt-nodejs)
 
-Join [Zerops Discord community](https://discord.com/invite/WDvCZ54).
+<br/>
+
+## Recipe features
+
+- Latest version of **Nuxt** with SSR running on a **Zerops Node.js** service.
+
+<br/>
+
+## Production vs. development
+
+This recipe is ready for production as is, and will scale horizontally by adding more containers in case of high traffic surges. If you want to achieve the highest baseline reliability and resiliace, start with at least two containers (add `minContainers: 2` in recipe YAML in the `app` service section, or change the minimum containers in "Automatic Scaling configuration" section of service detail).
+
+<br/>
+
+## Changes made over the default installation
+
+If you want to modify your existing Analog app to efficiently run on Zerops, there are no changes needed in the codebase on top of the standard installation, just add [zerops.yml](https://github.com/zeropsio/recipe-nuxt-nodejs/blob/main/zerops.yml) to your repository.
+
+<br/>
+
+Need help setting your project up? Join [Zerops Discord community](https://discord.com/invite/WDvCZ54).
