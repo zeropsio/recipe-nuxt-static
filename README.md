@@ -1,6 +1,6 @@
-# Zerops x Nuxt - Node.js
+# Zerops x Nuxt - Static
 
-Nuxt is an open source Vue framework for building web applications intuitive and powerful. [Zerops](https://zerops.io) makes deploying and running Nuxt apps, both server side rendered and static, a breeze. This recipe showcases the Node.js version, see [zeropsio/recipe-nuxt-static](https://github.com/zeropsio/recipe-nuxt-static) for the Static version.
+Nuxt is an open source Vue framework for building web applications intuitive and powerful. [Zerops](https://zerops.io) makes deploying and running Nuxt apps, both server side rendered and static, a breeze. This recipe showcases the Static version, see [zeropsio/recipe-nuxt-nodejs](https://github.com/zeropsio/recipe-nuxt-nodejs) for the Node.js version.
 
 ![nuxt](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-nuxt.svg)
 
@@ -12,13 +12,13 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 
 <br/>
 
-[![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/nuxt-nodejs)
+[![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/nuxt-static)
 
 <br/>
 
 ## Recipe features
 
-- Latest version of **Nuxt** with SSR running on a **Zerops Node.js** service.
+- Latest version of **Nuxt** with SSG running on a **Zerops Static** service.
 
 <br/>
 
@@ -30,7 +30,7 @@ This recipe is ready for production as is, and will scale horizontally by adding
 
 ## Changes made over the default installation
 
-If you want to modify your existing Analog app to efficiently run on Zerops, there are no changes needed in the codebase on top of the standard installation, just add [zerops.yml](https://github.com/zeropsio/recipe-nuxt-nodejs/blob/main/zerops.yml) to your repository.
+If you want to modify your existing Analog app to efficiently run on Zerops, there are no changes needed in the codebase on top of the standard installation, just add [zerops.yml](https://github.com/zeropsio/recipe-nuxt-static/blob/main/zerops.yml) to your repository.
 
 <br/>
 
