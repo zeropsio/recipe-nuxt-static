@@ -3,8 +3,8 @@ zerops:
     build:
       base: nodejs@20
       buildCommands:
-        - pnpm i
-        - pnpm nuxi generate
+        - yarn
+        - yarn nuxi generate
       deployFiles:
         - .output/public/~
     run:
