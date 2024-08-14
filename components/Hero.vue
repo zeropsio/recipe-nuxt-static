@@ -67,27 +67,21 @@ const importyaml = `project:
 
 services:
   - hostname: app
-    type: nodejs@20e
-    buildFromGit: https://github.com/zeropsio/recipe-nuxt-nodejs
-    enableSubdomainAccess: true`.trimStart();
+    type: static
+    buildFromGit: https://github.com/zeropsio/recipe-nuxt-static
+    enableSubdomainAccess: true
+`.trimStart();
 
 const zeropsyml = `zerops:
   - setup: app
     build:
       base: nodejs@20
       buildCommands:
-        - pnpm i
-        - pnpm build
+        - yarn
+        - yarn nuxi generate
       deployFiles:
-        - .output
-        - public
-        - node_modules
-        - package.json
+        - .output/public/~
     run:
-      base: nodejs@20
-      ports:
-        - port: 3000
-          httpSupport: true
-      start: pnpm start
+      base: static
       `.trimStart();
 </script>

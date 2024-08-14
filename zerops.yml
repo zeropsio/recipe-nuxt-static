@@ -9,4 +9,3 @@ zerops:
         - .output/public/~
     run:
       base: static
-      
